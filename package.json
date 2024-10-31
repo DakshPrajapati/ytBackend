@@ -1,0 +1,11 @@
+{
+  "name": "ytbackend",
+  "version": "1.0.0",
+  "description": "just to have fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daxx",
+  "license": "ISC"
+}

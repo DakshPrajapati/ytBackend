@@ -9,8 +9,15 @@ app.use(cors({
     credentials: true
 }))
 app.use(experss.json({limit:"16kb"}))
-app.use(express.urlencoded({extended:true, limit:"16kb"}))
-app.use(express.static("public"))
+app.use(experss.urlencoded({extended:true, limit:"16kb"}))
+app.use(experss.static("public"))
 app.use(cookieParser())
 
-export {app}  
+// routes
+
+import userRouter from "./routes/user.routes.js"
+
+app.use("/api/v1/users", userRouter)
+
+
+export {app}   
